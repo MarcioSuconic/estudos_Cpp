@@ -20,4 +20,6 @@ void contador_recursivo(int num, int cont) {
         if (num > cont) {
             contador_recursivo(num, ++cont); // ++i pré-incremento i++ pós incremento
         }
+
+        std::cout << "fim da funcao contador_recursivo" << '\n';
 }
