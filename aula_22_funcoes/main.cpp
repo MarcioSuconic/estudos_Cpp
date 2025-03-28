@@ -1,10 +1,12 @@
 #include <iostream>
 
+//using namespace std;
+
 // precisamos prototipar estas funções
 void texto();
 void soma(int n1, int n2);
 int soma_2(int n1, int n2);
-void tr(std::__cxxll::string tra[4]);
+void tr(std::string tra[4]);
 
 int main() {
 
@@ -34,8 +36,8 @@ int soma_2(int n1, int n2){
     return (n1 + n2);
 }
 
-void tr(string tra[4]) {
+void tr(std::string tra[4]) {
     for(int i=0; i<4; ++i) {
-        cout << tra[i] << '\n';
+        std::cout << tra[i] << '\n';
     }
 }
