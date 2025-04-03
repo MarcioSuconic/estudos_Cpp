@@ -20,10 +20,11 @@ private:
 };
 
 void Veiculo::imprimir(){
-    std::cout << "Tipo do veículo: " << tipo << '\n';
+    std::cout << '\n' << '\n' << "Tipo do veículo: " << tipo << '\n';
     std::cout << "Velocidade máxima: " << velMax << '\n';
     std::cout << "Qtde rodas: " << rodas << '\n';
     std::cout << "Blindagem: " << blind << '\n';
+    std::cout << "Armamento: " << arma << '\n';
 }
 
 void Veiculo::setTipo(int tp){
@@ -51,6 +52,35 @@ Moto::Moto() { // metodo construtor é o metodo que tem o mesmo nome da classe
     setArma(false);
     setTipo(1);
     setVelMax(120);
+}
+
+class Carro:public Veiculo{
+public:
+    Carro();
+};
+
+Carro::Carro(){
+    vel = 0;
+    blind = 0;
+    rodas = 4;
+    setArma(false);
+    setTipo(2);
+    setVelMax(180);
+}
+
+
+class Tanque:public Veiculo{
+public:
+    Tanque();
+};
+
+Tanque::Tanque(){
+    vel = 0;
+    blind = 1;
+    rodas = 8;
+    setArma(true);
+    setTipo(3);
+    setVelMax(60);
 }
 
 #endif // CLASSES_H_INCLUDED
