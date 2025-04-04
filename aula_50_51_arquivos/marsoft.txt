@@ -1,0 +1,4 @@
+Primeiro texto gravado por C++ 
+Primeiro, não mais, texto gravado por C++ 
+Aluno Marcio Suconic 
+Faremos um jogo F1 em C++, faremos. 
